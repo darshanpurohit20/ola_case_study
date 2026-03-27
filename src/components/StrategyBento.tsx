@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Target, Activity, CheckCircle, ShieldAlert } from 'lucide-react';
+import { Activity, ShieldAlert } from 'lucide-react';
 
 const StrategyBento = () => {
   return (

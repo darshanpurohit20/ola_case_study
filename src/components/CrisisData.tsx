@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts';
+import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
 import { AlertCircle } from 'lucide-react';
 
 const shareData = [
