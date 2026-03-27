@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
+# Ola: The Architecture of Trust
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A highly interactive, cinematic scrollytelling web presentation analyzing the strategic and operational paradoxes of Ola Electric and the broader Ola ecosystem.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project transforms a traditional business strategy case study into a modern, interactive web experience. It focuses on the core strategic thesis: **"Ola does not have a service problem; it has a trust-architecture failure caused by founder-driven governance and a lack of execution discipline."** 
 
-## React Compiler
+By leveraging deep scroll-linked animations, realistic 3D assets, and dynamic data visualization, the presentation walks stakeholders through the crisis, the root cause, and the proposed turnaround gate metrics.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
 
-## Expanding the ESLint configuration
+- **Immersive Scrollytelling:** Features a 400vh+ central execution timeline where the primary subject physically traverses the narrative phases using scroll-bound coordinate mapping.
+- **Cinematic Asset Integration:** Integrates photorealistic renders of the Ola S1 Pro, Ola Cabs, and Krutrim AI robotics with advanced native CSS glassmorphic overlapping and masking.
+- **Dynamic Data Visualization:** Utilizes fluid, animated React charts to display visceral market share collapses and stock price destruction tied to user scroll interactions.
+- **Performant Physics:** Built entirely on modern frontend mechanics with Framer Motion logic, ensuring ultra-smooth 60fps parallax animations across all viewports.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework:** React 18 + Vite (TypeScript)
+- **Styling:** Tailwind CSS (v4) with custom utility blending
+- **Animations:** Framer Motion
+- **Data Visualization:** Recharts
+- **Icons:** Lucide React
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Local Development
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To run this presentation locally:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/darshanpurohit20/ola_case_study.git
+   cd ola_case_study
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and navigate to `http://localhost:5173`.
