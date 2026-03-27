@@ -16,6 +16,8 @@ const ParallaxImage = ({ src, alt, className }: { src: string, alt: string, clas
        <motion.img 
          src={src} 
          alt={alt} 
+         loading="lazy"
+         decoding="async"
          style={{ y }}
          className={`relative z-10 object-contain w-[90%] h-[90%] drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] ${className}`}
        />

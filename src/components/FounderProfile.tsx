@@ -36,6 +36,8 @@ const FounderProfile = () => {
              src="/founder_bhavish.png" 
              alt="Founder Bhavish Aggarwal" 
              className="w-full max-w-[900px] object-cover object-top mask-image-gradient"
+             loading="lazy"
+             decoding="async"
              style={{ maskImage: 'linear-gradient(to top, transparent 0%, black 30%, black 100%)', WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 30%, black 100%)' }}
            />
         </motion.div>

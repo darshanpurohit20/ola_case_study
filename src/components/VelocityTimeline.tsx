@@ -88,6 +88,8 @@ const VelocityTimeline = () => {
             <motion.img 
                 src="/foods_v2_nobg.png"
                 alt="Ola Foods Backpack"
+                loading="lazy"
+                decoding="async"
                 className="absolute -top-32 -left-20 w-56 h-56 object-contain opacity-70 -z-10 drop-shadow-[0_0_40px_rgba(239,68,68,0.5)] pointer-events-none"
                 animate={{ y: [0, -15, 0], rotate: [-4, 4, -4] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
@@ -102,6 +104,8 @@ const VelocityTimeline = () => {
             <motion.img 
                 src="/cab_v2_nobg.png"
                 alt="Futuristic Car"
+                loading="lazy"
+                decoding="async"
                 className="absolute -top-32 -right-32 w-80 h-80 object-contain opacity-50 -z-10 drop-shadow-[0_0_40px_rgba(249,115,22,0.4)] pointer-events-none"
                 animate={{ y: [0, -10, 0], scale: [1, 1.02, 1] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
@@ -116,6 +120,8 @@ const VelocityTimeline = () => {
             <motion.img 
                 src="/krutrim_nobg.png"
                 alt="Krutrim Robot"
+                loading="lazy"
+                decoding="async"
                 className="absolute -top-40 -right-24 w-72 h-72 object-contain opacity-50 -z-10 drop-shadow-[0_0_40px_rgba(59,130,246,0.5)] pointer-events-none"
                 animate={{ y: [0, 20, 0], scale: [1, 1.05, 1] }}
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
