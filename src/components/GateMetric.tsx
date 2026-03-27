@@ -8,8 +8,8 @@ const GateMetric = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, margin: "200px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center w-full max-w-4xl mx-auto"
       >
         <h2 className="text-3xl md:text-5xl font-black mb-16 text-white tracking-widest uppercase">The 6-Month Gate</h2>
@@ -27,8 +27,8 @@ const GateMetric = () => {
               stroke="#00FF66" strokeWidth="6" strokeLinecap="round"
               initial={{ strokeDasharray: "0 300" }}
               whileInView={{ strokeDasharray: "40 300" }} // Approx 15% visual
-              viewport={{ once: true }}
-              transition={{ duration: 1.5, delay: 0.5, ease: "easeInOut" }}
+              viewport={{ once: true, margin: "200px" }}
+              transition={{ duration: 1.0, delay: 0.1, ease: "easeInOut" }}
               className="glow-text"
               style={{ filter: "drop-shadow(0 0 10px rgba(0, 255, 102, 0.5))" }}
             />
@@ -42,8 +42,8 @@ const GateMetric = () => {
         <motion.p 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          viewport={{ once: true, margin: "200px" }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           className="text-2xl text-gray-300 font-light max-w-2xl mx-auto leading-relaxed mb-12"
         >
           If EV market share remains below 15% by Q2 FY27... <br/>
@@ -53,8 +53,8 @@ const GateMetric = () => {
         <motion.div
            initial={{ opacity: 0 }}
            whileInView={{ opacity: 1 }}
-           viewport={{ once: true }}
-           transition={{ duration: 1, delay: 1.5 }}
+           viewport={{ once: true, margin: "200px" }}
+           transition={{ duration: 0.8, delay: 0.6 }}
            className="inline-block"
         >
           <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white border-t border-b border-ola-neon/30 py-6 uppercase">
